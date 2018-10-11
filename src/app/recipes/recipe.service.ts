@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http'; 
 import { Subject } from 'rxjs';
 import 'rxjs/Rx';
 
@@ -30,8 +29,7 @@ export class RecipeService {
     )
   ];
 
-  constructor(private shoppingService: ShoppingService,
-              private http: Http) {
+  constructor(private shoppingService: ShoppingService) {
 
   }
 
